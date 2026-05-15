@@ -1,0 +1,72 @@
+{
+    "tweet_id": 1992928861559165350,
+    "retweet_id": 1992898438678122634,
+    "quote_id": 0,
+    "reply_id": 0,
+    "conversation_id": 1992928861559165350,
+    "source_id": 0,
+    "date": "2025-11-24 12:10:42",
+    "author": {
+        "id": 1097026698162298880,
+        "name": "ochiai_kirari",
+        "nick": "落合 希来里",
+        "date": "2019-02-17 06:55:21",
+        "profile_banner": "https://pbs.twimg.com/profile_banners/1097026698162298880/1765861337",
+        "favourites_count": 3834,
+        "followers_count": 93186,
+        "friends_count": 51,
+        "listed_count": 2420,
+        "media_count": 2324,
+        "statuses_count": 5322,
+        "location": "",
+        "verified": false,
+        "protected": false,
+        "profile_image": "https://pbs.twimg.com/profile_images/2000795224139030536/GGFZQl0D.jpg",
+        "url": "https://not-equal-me.jp",
+        "description": "Ｂ型. 2001年5月22日生まれ. ふたご座. 栃木県出身.「とちぎ未来大使」。指原莉乃プロデュースのアイドル「≠ME(ノットイコールミー)」Instagram▷ http://instagram.com/_ochiaikirari_…"
+    },
+    "user": {
+        "id": 1098214790600617985,
+        "name": "suganami_mirei",
+        "nick": "菅波 美玲",
+        "date": "2019-02-20 13:36:24",
+        "profile_banner": "https://pbs.twimg.com/profile_banners/1098214790600617985/1765861504",
+        "favourites_count": 8437,
+        "followers_count": 125041,
+        "friends_count": 52,
+        "listed_count": 2719,
+        "media_count": 2579,
+        "statuses_count": 8462,
+        "location": "",
+        "verified": false,
+        "protected": false,
+        "profile_image": "https://pbs.twimg.com/profile_images/2000794234329423875/yDnjXgFv.jpg",
+        "url": "https://not-equal-me.jp",
+        "description": "O型、2000年2月5日生まれ、みずがめ座、福島県出身。指原莉乃プロデュースのアイドル「≠ME(ノットイコールミー)」 Instagram → http://instagram.com/suganami_mirei_"
+    },
+    "lang": "ja",
+    "source": "Twitter for iPhone",
+    "sensitive": false,
+    "sensitive_flags": [],
+    "favorite_count": 0,
+    "quote_count": 0,
+    "reply_count": 0,
+    "retweet_count": 221,
+    "bookmark_count": 0,
+    "view_count": 0,
+    "hashtags": [
+        "排他的ファイター"
+    ],
+    "mentions": [
+        {
+            "id": 1097026698162298880,
+            "name": "ochiai_kirari",
+            "nick": "落合 希来里"
+        }
+    ],
+    "content": "RT @ochiai_kirari: スペシャルリリースイベント in大阪\nありがとうございました🐙\n本日の #排他的ファイター いかがでしたか!\nSNSでぜひぜひ拡散してください♩♩♩\n\n第2レーン組︎︎✌🏻(◜𖥦◝ )✌🏻ｱﾘｶﾞﾄ〜!",
+    "date_original": "2025-11-24 10:09:48",
+    "count": 3,
+    "category": "twitter",
+    "subcategory": "timeline"
+}

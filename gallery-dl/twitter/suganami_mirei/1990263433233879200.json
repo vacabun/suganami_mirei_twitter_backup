@@ -1,0 +1,72 @@
+{
+    "tweet_id": 1990263433233879200,
+    "retweet_id": 1990231218298999227,
+    "quote_id": 0,
+    "reply_id": 0,
+    "conversation_id": 1990263433233879200,
+    "source_id": 0,
+    "date": "2025-11-17 03:39:14",
+    "author": {
+        "id": 1098167929605042176,
+        "name": "_sakurai_momo_",
+        "nick": "櫻井 もも",
+        "date": "2019-02-20 10:30:12",
+        "profile_banner": "https://pbs.twimg.com/profile_banners/1098167929605042176/1765861533",
+        "favourites_count": 10157,
+        "followers_count": 139532,
+        "friends_count": 51,
+        "listed_count": 2583,
+        "media_count": 1639,
+        "statuses_count": 4987,
+        "location": "",
+        "verified": false,
+        "protected": false,
+        "profile_image": "https://pbs.twimg.com/profile_images/2000795676381474816/aPtuxKLM.jpg",
+        "url": "https://not-equal-me.jp",
+        "description": "A型、2004年4月13日生まれ、おひつじ座、神奈川県出身。指原莉乃プロデュースのアイドル「≠ME(ノットイコールミー)」"
+    },
+    "user": {
+        "id": 1098214790600617985,
+        "name": "suganami_mirei",
+        "nick": "菅波 美玲",
+        "date": "2019-02-20 13:36:24",
+        "profile_banner": "https://pbs.twimg.com/profile_banners/1098214790600617985/1765861504",
+        "favourites_count": 8437,
+        "followers_count": 125041,
+        "friends_count": 52,
+        "listed_count": 2719,
+        "media_count": 2579,
+        "statuses_count": 8462,
+        "location": "",
+        "verified": false,
+        "protected": false,
+        "profile_image": "https://pbs.twimg.com/profile_images/2000794234329423875/yDnjXgFv.jpg",
+        "url": "https://not-equal-me.jp",
+        "description": "O型、2000年2月5日生まれ、みずがめ座、福島県出身。指原莉乃プロデュースのアイドル「≠ME(ノットイコールミー)」 Instagram → http://instagram.com/suganami_mirei_"
+    },
+    "lang": "ja",
+    "source": "Twitter for iPhone",
+    "sensitive": null,
+    "sensitive_flags": null,
+    "favorite_count": 0,
+    "quote_count": 0,
+    "reply_count": 0,
+    "retweet_count": 990,
+    "bookmark_count": 0,
+    "view_count": 0,
+    "hashtags": [
+        "ラヴィット"
+    ],
+    "mentions": [
+        {
+            "id": 1098167929605042176,
+            "name": "_sakurai_momo_",
+            "nick": "櫻井 もも"
+        }
+    ],
+    "content": "RT @_sakurai_momo_: 🎀ིྀとってもうれしいお知らせ🎀ིྀ\n\nあした放送の #ラヴィット🐰ྀི⸝⸝⸝\nももきゅん、初出演させていただきます💞\n\nどきどきゅんだあ〜😳💖\n朝からかわいさ＆きゅんぱわ〜全開で\nがんばるよっ🍑ྀི♡\n\nみなさんもぜひたくさん盛り上げて\nいっしょに楽しんでくださると\nうれしいですっ⸝⸝>  ̫ <⸝⸝💖",
+    "date_original": "2025-11-17 01:31:13",
+    "count": 0,
+    "category": "twitter",
+    "subcategory": "timeline"
+}
