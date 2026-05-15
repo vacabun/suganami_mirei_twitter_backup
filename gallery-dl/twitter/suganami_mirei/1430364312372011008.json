@@ -1,0 +1,78 @@
+{
+    "tweet_id": 1430364312372011008,
+    "retweet_id": 0,
+    "quote_id": 1430703068203552772,
+    "reply_id": 0,
+    "conversation_id": 1430364312372011008,
+    "source_id": 0,
+    "date": "2021-08-25 03:00:01",
+    "author": {
+        "id": 2549106570,
+        "name": "fortunemusicJP",
+        "nick": "forTUNE music",
+        "date": "2014-06-06 03:01:58",
+        "profile_banner": "https://pbs.twimg.com/profile_banners/2549106570/1747282387",
+        "favourites_count": 2,
+        "followers_count": 42906,
+        "friends_count": 146,
+        "listed_count": 210,
+        "media_count": 1883,
+        "statuses_count": 5340,
+        "location": "",
+        "verified": false,
+        "protected": false,
+        "profile_image": "https://pbs.twimg.com/profile_images/1003563970177916928/0qg1y8cX.jpg",
+        "url": "https://fortunemusic.jp/",
+        "description": "forTUNE musicは、イベント参加券や限定グッズなどの特典付きCDの購入サイトです。ココでしか会えない、ココでしか見られない、ココでしか手に入らない、他ではできない体験をforTUNE musicで楽しみましょう！"
+    },
+    "user": {
+        "id": 1098214790600617985,
+        "name": "suganami_mirei",
+        "nick": "菅波 美玲",
+        "date": "2019-02-20 13:36:24",
+        "profile_banner": "https://pbs.twimg.com/profile_banners/1098214790600617985/1765861504",
+        "favourites_count": 8437,
+        "followers_count": 125018,
+        "friends_count": 52,
+        "listed_count": 2719,
+        "media_count": 2579,
+        "statuses_count": 8462,
+        "location": "",
+        "verified": false,
+        "protected": false,
+        "profile_image": "https://pbs.twimg.com/profile_images/2000794234329423875/yDnjXgFv.jpg",
+        "url": "https://not-equal-me.jp",
+        "description": "O型、2000年2月5日生まれ、みずがめ座、福島県出身。指原莉乃プロデュースのアイドル「≠ME(ノットイコールミー)」 Instagram → http://instagram.com/suganami_mirei_"
+    },
+    "lang": "ja",
+    "source": "Twitter for Advertisers.",
+    "sensitive": null,
+    "sensitive_flags": null,
+    "favorite_count": 642,
+    "quote_count": 7,
+    "reply_count": 1,
+    "retweet_count": 67,
+    "bookmark_count": 3,
+    "view_count": 0,
+    "hashtags": [
+        "イコラブ",
+        "ノイミー"
+    ],
+    "mentions": [
+        {
+            "id": 874810152875995136,
+            "name": "Equal_LOVE_12",
+            "nick": "＝LOVE_official"
+        },
+        {
+            "id": 1096721475094999040,
+            "name": "Notequal_ME",
+            "nick": "≠ME_official"
+        }
+    ],
+    "content": "【＝LOVE】【≠ME】#イコラブ #ノイミー @Equal_LOVE_12　@Notequal_ME\n\n／\n「＝LOVE、≠ME スペシャルコンサート『24girls 2020』」発売記念🎉\nオンライン個別サイン会 第2次応募受付開始💕\n＼\n\n2次応募〆切は8/26(木)12時まで‼️\n本イベントは2次受付が最終受付となりますのでお見逃しなく💦\n詳細は⬇️",
+    "quote_by": "suganami_mirei",
+    "count": 0,
+    "category": "twitter",
+    "subcategory": "timeline"
+}
