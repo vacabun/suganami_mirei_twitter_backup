@@ -1,0 +1,14 @@
+.DS_Store
+
+__pycache__/
+*.py[cod]
+
+.venv/
+venv/
+env/
+
+output/
+.publish/
+gallery-dl/
+
+x.com_cookies.txt
