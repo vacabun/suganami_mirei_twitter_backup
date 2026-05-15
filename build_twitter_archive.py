@@ -21,6 +21,7 @@ DATE_FORMAT = "%Y-%m-%d %H:%M:%S"
 MEDIA_EXTENSIONS = {".jpg", ".jpeg", ".png", ".gif", ".webp", ".mp4", ".mov", ".m4v", ".webm"}
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".gif", ".webp"}
 VIDEO_EXTENSIONS = {".mp4", ".mov", ".m4v", ".webm"}
+URL_PATTERN = re.compile(r"https?://[^\s<>\"]+")
 CHROME_CANDIDATES = [
     "google-chrome",
     "google-chrome-stable",
@@ -102,6 +103,10 @@ def parse_args() -> argparse.Namespace:
         "--chrome-binary",
         help="Explicit Chrome/Chromium binary path for PDF export.",
     )
+    parser.add_argument(
+        "--media-base-url",
+        help="Optional base URL for media files. When set, media links use this base instead of local relative paths.",
+    )
     return parser.parse_args()
 
 
@@ -119,6 +124,13 @@ def read_text(path: Path) -> str:
 def to_rel_url(path: Path, output_dir: Path) -> str:
     rel_path = os.path.relpath(path, output_dir)
     return quote(rel_path.replace(os.sep, "/"), safe="/._-")
+
+
+def to_media_url(path: Path, output_dir: Path, media_base_url: str | None) -> str:
+    if media_base_url:
+        base = media_base_url.rstrip("/")
+        return f"{base}/{quote(path.name, safe='/._-')}"
+    return to_rel_url(path, output_dir)
 
 
 def media_sort_key(path: Path) -> tuple[int, str]:
@@ -153,7 +165,11 @@ def load_profile(archive_dir: Path) -> dict[str, str]:
     }
 
 
-def build_media_index(archive_dir: Path, output_dir: Path) -> dict[str, list[MediaItem]]:
+def build_media_index(
+    archive_dir: Path,
+    output_dir: Path,
+    media_base_url: str | None = None,
+) -> dict[str, list[MediaItem]]:
     media_index: dict[str, list[Path]] = {}
     for path in archive_dir.iterdir():
         if not path.is_file() or path.suffix.lower() not in MEDIA_EXTENSIONS:
@@ -175,14 +191,24 @@ def build_media_index(archive_dir: Path, output_dir: Path) -> dict[str, list[Med
                 kind = "video"
             else:
                 continue
-            items.append(MediaItem(path=path, rel_url=to_rel_url(path, output_dir), kind=kind))
+            items.append(
+                MediaItem(
+                    path=path,
+                    rel_url=to_media_url(path, output_dir, media_base_url),
+                    kind=kind,
+                )
+            )
         indexed_items[tweet_stem] = items
     return indexed_items
 
 
-def load_tweets(archive_dir: Path, output_dir: Path) -> list[TweetEntry]:
+def load_tweets(
+    archive_dir: Path,
+    output_dir: Path,
+    media_base_url: str | None = None,
+) -> list[TweetEntry]:
     tweets: list[TweetEntry] = []
-    media_index = build_media_index(archive_dir, output_dir)
+    media_index = build_media_index(archive_dir, output_dir, media_base_url=media_base_url)
     for json_path in sorted(archive_dir.glob("*.json")):
         if json_path.name == "info.json":
             continue
@@ -261,10 +287,34 @@ def render_metrics(tweet: TweetEntry) -> str:
     )
 
 
+def linkify_text(text: str) -> str:
+    parts: list[str] = []
+    last_index = 0
+    trailing_punctuation = ".,!?:;)]}"
+
+    for match in URL_PATTERN.finditer(text):
+        start, end = match.span()
+        url = match.group(0)
+        trimmed_url = url.rstrip(trailing_punctuation)
+        suffix = url[len(trimmed_url) :]
+
+        parts.append(html.escape(text[last_index:start]))
+        parts.append(
+            f'<a href="{html.escape(trimmed_url, quote=True)}" '
+            'target="_blank" rel="noopener noreferrer">'
+            f"{html.escape(trimmed_url)}</a>"
+        )
+        parts.append(html.escape(suffix))
+        last_index = end
+
+    parts.append(html.escape(text[last_index:]))
+    return "".join(parts)
+
+
 def render_text_content(content: str) -> str:
     if not content.strip():
         return '<div class="tweet-text empty">[本文なし。メディアのみ、または反応系の投稿です]</div>'
-    return f'<div class="tweet-text">{html.escape(content)}</div>'
+    return f'<div class="tweet-text">{linkify_text(content)}</div>'
 
 
 def render_media(media: Iterable[MediaItem]) -> str:
@@ -309,7 +359,11 @@ def month_toc(tweets: list[TweetEntry]) -> str:
     if not tree:
         return ""
 
-    parts = ['      <aside class="toc-panel" aria-label="月別目次">\n', '        <div class="toc-title">月別目次</div>\n']
+    parts = [
+        '      <button type="button" id="toc-toggle" class="toc-toggle" aria-controls="toc-panel" aria-expanded="false">目次</button>\n',
+        '      <aside id="toc-panel" class="toc-panel is-collapsed" aria-label="月別目次">\n',
+        '        <div class="toc-title">月別目次</div>\n',
+    ]
     for year, months in tree.items():
         parts.append(f'        <details class="toc-year" open><summary>{year}</summary><div class="toc-months">')
         for month in months:
@@ -373,6 +427,8 @@ def page_javascript() -> str:
         const sentinel = document.getElementById("load-sentinel");
         const loadMoreButton = document.getElementById("load-more");
         const statusNode = document.getElementById("timeline-status");
+        const tocPanel = document.getElementById("toc-panel");
+        const tocToggle = document.getElementById("toc-toggle");
         const monthButtons = Array.from(document.querySelectorAll(".toc-month-button"));
 
         if (!dataNode || !timeline || !sentinel || !loadMoreButton || !statusNode) {
@@ -388,6 +444,14 @@ def page_javascript() -> str:
         let currentList = null;
         let observer = null;
         let loadLock = false;
+
+        function setTocOpen(open) {
+            if (!tocPanel || !tocToggle) {
+                return;
+            }
+            tocPanel.classList.toggle("is-collapsed", !open);
+            tocToggle.setAttribute("aria-expanded", open ? "true" : "false");
+        }
 
         function updateStatus() {
             const loaded = numberFormatter.format(cursor);
@@ -495,6 +559,14 @@ def page_javascript() -> str:
                 target.open = true;
                 target.scrollIntoView({ behavior: "smooth", block: "start" });
             }
+            setTocOpen(false);
+        }
+
+        if (tocToggle) {
+            tocToggle.addEventListener("click", () => {
+                const isOpen = tocToggle.getAttribute("aria-expanded") == "true";
+                setTocOpen(!isOpen);
+            });
         }
 
         monthButtons.forEach((button) => {
@@ -572,10 +644,7 @@ def page_css() -> str:
     }
 
     .page-shell {
-        display: grid;
-        grid-template-columns: 220px minmax(0, 1fr);
-        gap: 18px;
-        align-items: start;
+        display: block;
     }
 
     .content-column {
@@ -597,15 +666,11 @@ def page_css() -> str:
         overflow: hidden;
         border-radius: 14px;
         background:
-            linear-gradient(135deg, rgba(154, 214, 248, 0.48), rgba(90, 169, 218, 0.22)),
-            #dcedfb;
-    }
-
-    .hero-banner img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+            linear-gradient(135deg, rgba(154, 214, 248, 0.18), rgba(90, 169, 218, 0.08)),
+            var(--hero-banner-image, #dcedfb);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
     .hero-card {
@@ -682,34 +747,65 @@ def page_css() -> str:
     }
 
     .toc-panel {
-        position: sticky;
-        top: 18px;
-        padding: 12px;
-        border-radius: 18px;
-        background: rgba(244, 250, 255, 0.96);
-        border: 1px solid rgba(93, 148, 191, 0.14);
-        box-shadow: 0 10px 30px rgba(73, 126, 170, 0.08);
-        max-height: calc(100vh - 36px);
+        position: fixed;
+        left: 16px;
+        bottom: 62px;
+        width: min(196px, calc(100vw - 32px));
+        padding: 10px 10px 8px;
+        border-radius: 14px;
+        background: rgba(244, 250, 255, 0.62);
+        border: 1px solid rgba(93, 148, 191, 0.08);
+        box-shadow: 0 4px 14px rgba(73, 126, 170, 0.04);
+        max-height: min(52vh, 520px);
         overflow: auto;
+        z-index: 35;
+        transition: opacity 0.18s ease, transform 0.18s ease;
+    }
+
+    .toc-panel.is-collapsed {
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(8px);
+    }
+
+    .toc-toggle {
+        position: fixed;
+        left: 16px;
+        bottom: 16px;
+        z-index: 36;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 54px;
+        padding: 7px 12px;
+        border: 1px solid rgba(93, 148, 191, 0.10);
+        border-radius: 999px;
+        background: rgba(244, 250, 255, 0.78);
+        color: var(--muted);
+        font-size: 0.78rem;
+        box-shadow: 0 4px 14px rgba(73, 126, 170, 0.04);
+        cursor: pointer;
     }
 
     .toc-title {
-        font-size: 0.92rem;
-        font-weight: 700;
-        letter-spacing: 0.04em;
-        margin-bottom: 10px;
+        font-size: 0.76rem;
+        font-weight: 600;
+        letter-spacing: 0.06em;
+        margin-bottom: 8px;
+        color: var(--muted);
+        text-transform: uppercase;
     }
 
     .toc-year + .toc-year {
-        margin-top: 8px;
+        margin-top: 6px;
     }
 
     .toc-year summary {
         cursor: pointer;
         list-style: none;
-        font-weight: 700;
-        font-size: 0.92rem;
-        color: var(--text);
+        font-weight: 600;
+        font-size: 0.84rem;
+        color: var(--muted);
     }
 
     .toc-year summary::-webkit-details-marker {
@@ -718,8 +814,8 @@ def page_css() -> str:
 
     .toc-year summary::before {
         content: "▸";
-        color: var(--accent);
-        margin-right: 6px;
+        color: rgba(90, 169, 218, 0.9);
+        margin-right: 5px;
         transition: transform 0.18s ease;
         display: inline-block;
     }
@@ -730,8 +826,8 @@ def page_css() -> str:
 
     .toc-months {
         display: grid;
-        gap: 6px;
-        padding: 8px 0 2px 16px;
+        gap: 4px;
+        padding: 6px 0 2px 14px;
     }
 
     .profile-meta a,
@@ -755,8 +851,17 @@ def page_css() -> str:
     .toc-month-button {
         justify-content: flex-start;
         width: 100%;
-        background: rgba(255, 255, 255, 0.7);
-        border: 1px solid rgba(93, 148, 191, 0.12);
+        padding: 4px 8px;
+        background: transparent;
+        border: 1px solid transparent;
+        color: var(--muted);
+        font-size: 0.78rem;
+    }
+
+    .toc-month-button:hover {
+        background: rgba(255, 255, 255, 0.52);
+        border-color: rgba(93, 148, 191, 0.08);
+        color: var(--text);
     }
 
     .summary {
@@ -988,7 +1093,7 @@ def page_css() -> str:
         }
 
         .page-shell {
-            grid-template-columns: 1fr;
+            display: block;
         }
 
         .hero-card {
@@ -1013,13 +1118,16 @@ def page_css() -> str:
         }
 
         .toc-panel {
-            position: fixed;
             left: 12px;
-            bottom: 12px;
-            top: auto;
+            bottom: 56px;
             width: min(220px, calc(100vw - 24px));
             max-height: 44vh;
             z-index: 30;
+        }
+
+        .toc-toggle {
+            left: 12px;
+            bottom: 12px;
         }
 
         .tweet-header,
@@ -1057,6 +1165,7 @@ def page_css() -> str:
             break-inside: avoid;
         }
 
+        .toc-toggle,
         .toc-panel,
         .timeline-controls,
         .timeline-status,
@@ -1123,10 +1232,13 @@ def render_page(
         handle.write("      <main class=\"content-column\">\n")
         handle.write("    <section class=\"hero\">\n")
         if profile.get("profile_banner"):
+            banner_style = (
+                " style=\"--hero-banner-image: linear-gradient(135deg, rgba(154, 214, 248, 0.18), "
+                f"rgba(90, 169, 218, 0.08)), url('{html.escape(profile['profile_banner'], quote=True)}');\""
+            )
             handle.write(
-                "      <div class=\"hero-banner\">"
-                f"<img src=\"{html.escape(profile['profile_banner'], quote=True)}\" "
-                f"alt=\"{html.escape(profile['display_name'])} banner\"></div>\n"
+                f"      <div class=\"hero-banner\"{banner_style}"
+                f" role=\"img\" aria-label=\"{html.escape(profile['display_name'])} banner\"></div>\n"
             )
         handle.write("      <div class=\"hero-card\">\n")
         if profile.get("profile_image"):
@@ -1144,7 +1256,7 @@ def render_page(
         handle.write("          </div>\n")
         handle.write("          <p class=\"hero-note\">これはバックアップサイトです。</p>\n")
         if profile.get("description"):
-            handle.write(f"          <p>{html.escape(profile['description'])}</p>\n")
+            handle.write(f"          <p>{linkify_text(profile['description'])}</p>\n")
         handle.write("          <div class=\"profile-meta\">\n")
         handle.write(
             f"            <a href=\"https://x.com/{quote(profile['screen_name'])}\" "
@@ -1242,7 +1354,7 @@ def main() -> int:
     )
 
     profile = load_profile(archive_dir)
-    tweets = load_tweets(archive_dir, output_path.parent)
+    tweets = load_tweets(archive_dir, output_path.parent, media_base_url=args.media_base_url)
     tweets.sort(key=lambda item: item.date, reverse=args.order == "desc")
 
     if args.limit > 0:

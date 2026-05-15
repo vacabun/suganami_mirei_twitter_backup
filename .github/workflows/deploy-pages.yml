@@ -32,6 +32,8 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Generate static site
+        env:
+          MEDIA_BASE_URL: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.sha }}/gallery-dl/twitter/suganami_mirei
         run: bash gen.sh
 
       - name: Prepare publish directory
@@ -39,7 +41,6 @@ jobs:
           rm -rf .publish
           mkdir -p .publish
           cp -R output .publish/output
-          cp -R gallery-dl .publish/gallery-dl
           cp index.html .publish/index.html
           touch .publish/.nojekyll
 
