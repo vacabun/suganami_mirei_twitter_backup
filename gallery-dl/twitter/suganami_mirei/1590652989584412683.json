@@ -1,0 +1,73 @@
+{
+    "tweet_id": 1590652989584412683,
+    "retweet_id": 0,
+    "quote_id": 1591695965568008192,
+    "reply_id": 0,
+    "conversation_id": 1590652989584412683,
+    "source_id": 0,
+    "date": "2022-11-10 10:30:00",
+    "author": {
+        "id": 1360049782798995458,
+        "name": "_king_records",
+        "nick": "KING RECORDS(キングレコード)",
+        "date": "2021-02-12 02:17:43",
+        "profile_banner": "https://pbs.twimg.com/profile_banners/1360049782798995458/1770368666",
+        "favourites_count": 934,
+        "followers_count": 55463,
+        "friends_count": 548,
+        "listed_count": 152,
+        "media_count": 4082,
+        "statuses_count": 6451,
+        "location": "東京",
+        "verified": false,
+        "protected": false,
+        "profile_image": "https://pbs.twimg.com/profile_images/1612387227715403779/Bdiw9YJi.jpg",
+        "url": "https://www.kingrecords.co.jp",
+        "description": "キングレコード公式アカウントです。所属アーティストの最新情報をお届けします！ ✨ここでしか見られないオリジナルコンテンツやオフショットも随時更新中🎵ハイライトから各アーティストのプロフ帳をチェック📖"
+    },
+    "user": {
+        "id": 1098214790600617985,
+        "name": "suganami_mirei",
+        "nick": "菅波 美玲",
+        "date": "2019-02-20 13:36:24",
+        "profile_banner": "https://pbs.twimg.com/profile_banners/1098214790600617985/1765861504",
+        "favourites_count": 8437,
+        "followers_count": 125018,
+        "friends_count": 52,
+        "listed_count": 2719,
+        "media_count": 2579,
+        "statuses_count": 8462,
+        "location": "",
+        "verified": false,
+        "protected": false,
+        "profile_image": "https://pbs.twimg.com/profile_images/2000794234329423875/yDnjXgFv.jpg",
+        "url": "https://not-equal-me.jp",
+        "description": "O型、2000年2月5日生まれ、みずがめ座、福島県出身。指原莉乃プロデュースのアイドル「≠ME(ノットイコールミー)」 Instagram → http://instagram.com/suganami_mirei_"
+    },
+    "lang": "ja",
+    "source": "Twitter Web App",
+    "sensitive": false,
+    "sensitive_flags": [],
+    "favorite_count": 1679,
+    "quote_count": 49,
+    "reply_count": 2,
+    "retweet_count": 313,
+    "bookmark_count": 25,
+    "view_count": 0,
+    "hashtags": [
+        "TikTok流行語大賞2022",
+        "ノイミー"
+    ],
+    "mentions": [
+        {
+            "id": 1096721475094999040,
+            "name": "Notequal_ME",
+            "nick": "≠ME_official"
+        }
+    ],
+    "content": "／\n『TikTok流行語大賞2022』に\n ≠ME「てゆーか、みるてんって何？」がノミネート🏆✨\n＼\n\n本日からTikTokアプリ内にてユーザー投票も受付中🙌\n11/23まで毎日3回投票可能ですので、ぜひご参加ください📲💞\n\n👇投票ページ\nhttps://activity.tiktok.com/magic/eco/runtime/release/635b14cd13669603d5e51cb3?appType=tiktok&magic_page_no=1\n\n#TikTok流行語大賞2022\n#ノイミー\n@Notequal_ME",
+    "quote_by": "suganami_mirei",
+    "count": 3,
+    "category": "twitter",
+    "subcategory": "timeline"
+}
