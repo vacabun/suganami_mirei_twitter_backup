@@ -1,0 +1,31 @@
+{
+  "extractor": {
+    "twitter": {
+      "cookies": "x.com_cookies.txt",
+
+      "text-tweets": true,
+      "retweets": true,
+      "replies": true,
+      "quoted": true,
+
+      "timeline": {
+        "strategy": "tweets"
+      },
+
+      "postprocessors": [
+        {
+          "name": "metadata",
+          "event": "post",
+          "filename": "{tweet_id}.json"
+        },
+        {
+          "name": "metadata",
+          "mode": "custom",
+          "event": "post",
+          "filename": "{tweet_id}.txt",
+          "content-format": "{content}"
+        }
+      ]
+    }
+  }
+}
