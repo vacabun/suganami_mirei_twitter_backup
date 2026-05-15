@@ -1,0 +1,72 @@
+{
+    "tweet_id": 1954513273115844800,
+    "retweet_id": 1954509815889252401,
+    "quote_id": 0,
+    "reply_id": 0,
+    "conversation_id": 1954513273115844800,
+    "source_id": 0,
+    "date": "2025-08-10 12:00:52",
+    "author": {
+        "id": 1098230959269281792,
+        "name": "nagata_shiori_",
+        "nick": "永田 詩央里",
+        "date": "2019-02-20 14:40:39",
+        "profile_banner": "https://pbs.twimg.com/profile_banners/1098230959269281792/1765861364",
+        "favourites_count": 4709,
+        "followers_count": 120179,
+        "friends_count": 52,
+        "listed_count": 2734,
+        "media_count": 966,
+        "statuses_count": 4754,
+        "location": "",
+        "verified": false,
+        "protected": false,
+        "profile_image": "https://pbs.twimg.com/profile_images/2000793647034589194/3T_e1pLt.jpg",
+        "url": "https://not-equal-me.jp",
+        "description": "Ａ型、2004年4月2日生まれ、おひつじ座、広島県出身 。指原莉乃プロデュースのアイドル「≠ME(ノットイコールミー)」 Instagram▶︎ https://instagram.com/nagata__shiori?igshid=YmMyMTA2M2Y=  #永田ラジオ"
+    },
+    "user": {
+        "id": 1098214790600617985,
+        "name": "suganami_mirei",
+        "nick": "菅波 美玲",
+        "date": "2019-02-20 13:36:24",
+        "profile_banner": "https://pbs.twimg.com/profile_banners/1098214790600617985/1765861504",
+        "favourites_count": 8437,
+        "followers_count": 125018,
+        "friends_count": 52,
+        "listed_count": 2719,
+        "media_count": 2579,
+        "statuses_count": 8462,
+        "location": "",
+        "verified": false,
+        "protected": false,
+        "profile_image": "https://pbs.twimg.com/profile_images/2000794234329423875/yDnjXgFv.jpg",
+        "url": "https://not-equal-me.jp",
+        "description": "O型、2000年2月5日生まれ、みずがめ座、福島県出身。指原莉乃プロデュースのアイドル「≠ME(ノットイコールミー)」 Instagram → http://instagram.com/suganami_mirei_"
+    },
+    "lang": "ja",
+    "source": "Twitter for iPhone",
+    "sensitive": null,
+    "sensitive_flags": [],
+    "favorite_count": 0,
+    "quote_count": 0,
+    "reply_count": 0,
+    "retweet_count": 588,
+    "bookmark_count": 0,
+    "view_count": 0,
+    "hashtags": [
+        "ノイミー"
+    ],
+    "mentions": [
+        {
+            "id": 1098230959269281792,
+            "name": "nagata_shiori_",
+            "nick": "永田 詩央里"
+        }
+    ],
+    "content": "RT @nagata_shiori_: ノイミー会in大阪🐙ありがとうございました🪞ハプニングもありつつ(？)ゆるゆるハッピーな時間でしたね💎\nそして『カフェ樂園』を披露させていただきました！いかがでしたか☕️\n\nみんなへの好きが、止まらへん♪\n #ノイミー",
+    "date_original": "2025-08-10 11:47:07",
+    "count": 3,
+    "category": "twitter",
+    "subcategory": "timeline"
+}
