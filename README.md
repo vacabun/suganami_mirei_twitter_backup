@@ -29,7 +29,7 @@ This repository already includes `.github/workflows/deploy-pages.yml`:
 - Every push to the default branch runs `gen.sh` with GitHub Actions
 - The workflow generates the page with external media URLs that point to the repository's raw files
 - Only the generated site is uploaded as a Pages artifact, so deployment stays much lighter than copying the entire `gallery-dl/` directory
-- The root `index.html` redirects to `output/suganami_mirei/timeline.html`
+- The generated timeline is published directly at the Pages root URL
 
 Local generation still uses relative media paths by default, so you can browse the archive offline from your own checkout.
 

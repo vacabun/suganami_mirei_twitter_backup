@@ -41,7 +41,7 @@ jobs:
           rm -rf .publish
           mkdir -p .publish
           cp -R output .publish/output
-          cp index.html .publish/index.html
+          cp output/suganami_mirei/timeline.html .publish/index.html
           touch .publish/.nojekyll
 
       - name: Upload GitHub Pages artifact
