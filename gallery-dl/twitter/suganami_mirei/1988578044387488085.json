@@ -1,0 +1,72 @@
+{
+    "tweet_id": 1988578044387488085,
+    "retweet_id": 1988486966158258462,
+    "quote_id": 0,
+    "reply_id": 0,
+    "conversation_id": 1988578044387488085,
+    "source_id": 0,
+    "date": "2025-11-12 12:02:06",
+    "author": {
+        "id": 69282959,
+        "name": "mos_burger",
+        "nick": "モスバーガー",
+        "date": "2009-08-27 12:58:41",
+        "profile_banner": "https://pbs.twimg.com/profile_banners/69282959/1778563235",
+        "favourites_count": 3573,
+        "followers_count": 2158385,
+        "friends_count": 170,
+        "listed_count": 9816,
+        "media_count": 5051343,
+        "statuses_count": 8948514,
+        "location": "メニュー表はこちらから➡",
+        "verified": false,
+        "protected": false,
+        "profile_image": "https://pbs.twimg.com/profile_images/1642652752622006273/hdPSftqx.jpg",
+        "url": "https://lnky.jp/YG2EwqK",
+        "description": "モスバーガー公式アカウントです⛰🌊☀ いつもいいねコメントありがとうございます✨ 最新情報や企業活動、X限定のプレゼントキャンペーンを発信しています📣 DMでのお問い合わせは受け付けておりません。"
+    },
+    "user": {
+        "id": 1098214790600617985,
+        "name": "suganami_mirei",
+        "nick": "菅波 美玲",
+        "date": "2019-02-20 13:36:24",
+        "profile_banner": "https://pbs.twimg.com/profile_banners/1098214790600617985/1765861504",
+        "favourites_count": 8437,
+        "followers_count": 125041,
+        "friends_count": 52,
+        "listed_count": 2719,
+        "media_count": 2579,
+        "statuses_count": 8462,
+        "location": "",
+        "verified": false,
+        "protected": false,
+        "profile_image": "https://pbs.twimg.com/profile_images/2000794234329423875/yDnjXgFv.jpg",
+        "url": "https://not-equal-me.jp",
+        "description": "O型、2000年2月5日生まれ、みずがめ座、福島県出身。指原莉乃プロデュースのアイドル「≠ME(ノットイコールミー)」 Instagram → http://instagram.com/suganami_mirei_"
+    },
+    "lang": "ja",
+    "source": "Twitter for iPhone",
+    "sensitive": null,
+    "sensitive_flags": [],
+    "favorite_count": 0,
+    "quote_count": 0,
+    "reply_count": 0,
+    "retweet_count": 547,
+    "bookmark_count": 0,
+    "view_count": 0,
+    "hashtags": [
+        "ノイミーの今夜はもぐもぐ肉モス"
+    ],
+    "mentions": [
+        {
+            "id": 69282959,
+            "name": "mos_burger",
+            "nick": "モスバーガー"
+        }
+    ],
+    "content": "RT @mos_burger: ／\n【チーム黒毛和牛ダブルチーズ】\n🍖本編撮影後のコメント動画を公開💬\n#ノイミーの今夜はもぐもぐ肉モス\n＼\n\n黒毛和牛のダブルチーズバーガーの魅力や\nメンバーの見どころがいっぱい詰まっています✨\n\n動画本編はYouTubeにて公開中！💎\nhttps://t.co/gl7v0t03Mc",
+    "date_original": "2025-11-12 06:00:11",
+    "count": 1,
+    "category": "twitter",
+    "subcategory": "timeline"
+}
