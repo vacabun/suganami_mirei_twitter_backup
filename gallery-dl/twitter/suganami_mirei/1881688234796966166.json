@@ -1,0 +1,73 @@
+{
+    "tweet_id": 1881688234796966166,
+    "retweet_id": 0,
+    "quote_id": 1881690996322496974,
+    "reply_id": 0,
+    "conversation_id": 1881688234796966166,
+    "source_id": 0,
+    "date": "2025-01-21 13:00:09",
+    "author": {
+        "id": 837626591245037568,
+        "name": "bis_web",
+        "nick": "bis［ビス］",
+        "date": "2017-03-03 11:31:56",
+        "profile_banner": "https://pbs.twimg.com/profile_banners/837626591245037568/1763712112",
+        "favourites_count": 1305,
+        "followers_count": 71035,
+        "friends_count": 107,
+        "listed_count": 361,
+        "media_count": 3107,
+        "statuses_count": 9632,
+        "location": "光文社",
+        "verified": false,
+        "protected": false,
+        "profile_image": "https://pbs.twimg.com/profile_images/1800046379357921280/OpbILnWc.jpg",
+        "url": "http://bisweb.jp",
+        "description": "光文社 #bis冬号 12/1発売 #与田祐希 #金村美玖 #日向坂46 #筒井あやめ #乃木坂46 #正源司陽子 #藤嶌果歩 #佐藤勝利 #timelesz #南琴奈 #大久保桜子 #菅波美玲 #仲村悠菜"
+    },
+    "user": {
+        "id": 1098214790600617985,
+        "name": "suganami_mirei",
+        "nick": "菅波 美玲",
+        "date": "2019-02-20 13:36:24",
+        "profile_banner": "https://pbs.twimg.com/profile_banners/1098214790600617985/1765861504",
+        "favourites_count": 8437,
+        "followers_count": 125018,
+        "friends_count": 52,
+        "listed_count": 2719,
+        "media_count": 2579,
+        "statuses_count": 8462,
+        "location": "",
+        "verified": false,
+        "protected": false,
+        "profile_image": "https://pbs.twimg.com/profile_images/2000794234329423875/yDnjXgFv.jpg",
+        "url": "https://not-equal-me.jp",
+        "description": "O型、2000年2月5日生まれ、みずがめ座、福島県出身。指原莉乃プロデュースのアイドル「≠ME(ノットイコールミー)」 Instagram → http://instagram.com/suganami_mirei_"
+    },
+    "lang": "ja",
+    "source": "BIs_wp_to_tw",
+    "sensitive": false,
+    "sensitive_flags": null,
+    "favorite_count": 395,
+    "quote_count": 5,
+    "reply_count": 2,
+    "retweet_count": 58,
+    "bookmark_count": 17,
+    "view_count": 53302,
+    "hashtags": [
+        "ノットイコールミー",
+        "菅波美玲"
+    ],
+    "mentions": [
+        {
+            "id": 1098214790600617985,
+            "name": "suganami_mirei",
+            "nick": "菅波 美玲"
+        }
+    ],
+    "content": "bisモデルの最新メイクを徹底解剖🔍🎀 ࣪ 𓈒ㅤׂㅤ\n\n⋰\n\n≠ME（ #ノットイコールミー ）\n#菅波美玲 ちゃん🩵ʾʾ\n▶ @suganami_mirei\n\n⋱\n\n☟ここから𝗖𝗵𝗲𝗰𝗸⋆˚\nhttps://bisweb.jp/beauty/163592",
+    "quote_by": "suganami_mirei",
+    "count": 0,
+    "category": "twitter",
+    "subcategory": "timeline"
+}
