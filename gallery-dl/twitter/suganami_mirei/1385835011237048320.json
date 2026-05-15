@@ -1,0 +1,88 @@
+{
+    "tweet_id": 1385835011237048320,
+    "retweet_id": 0,
+    "quote_id": 1386163860474761218,
+    "reply_id": 0,
+    "conversation_id": 1385835011237048320,
+    "source_id": 0,
+    "date": "2021-04-24 05:56:28",
+    "author": {
+        "id": 1105395785754001409,
+        "name": "barimon_fm",
+        "nick": "バリバリMonster 2019-2021年 番組終了",
+        "date": "2019-03-12 09:11:07",
+        "profile_banner": "https://pbs.twimg.com/profile_banners/1105395785754001409/1608188760",
+        "favourites_count": 9862,
+        "followers_count": 423,
+        "friends_count": 3,
+        "listed_count": 4,
+        "media_count": 378,
+        "statuses_count": 1961,
+        "location": "",
+        "verified": false,
+        "protected": false,
+        "profile_image": "https://pbs.twimg.com/profile_images/1245674371999358978/N7SLspPZ.jpg",
+        "url": "http://www.fmfuji.co.jp",
+        "description": "FM FUJI 音楽番組 🎙バリバリMonster #バリモン MC #鮫島一六三 #西田望見 🎧2人の楽しいトークの掛け合いが聞けるバラエティ音楽番組です📻"
+    },
+    "user": {
+        "id": 1098214790600617985,
+        "name": "suganami_mirei",
+        "nick": "菅波 美玲",
+        "date": "2019-02-20 13:36:24",
+        "profile_banner": "https://pbs.twimg.com/profile_banners/1098214790600617985/1765861504",
+        "favourites_count": 8437,
+        "followers_count": 125018,
+        "friends_count": 52,
+        "listed_count": 2719,
+        "media_count": 2579,
+        "statuses_count": 8462,
+        "location": "",
+        "verified": false,
+        "protected": false,
+        "profile_image": "https://pbs.twimg.com/profile_images/2000794234329423875/yDnjXgFv.jpg",
+        "url": "https://not-equal-me.jp",
+        "description": "O型、2000年2月5日生まれ、みずがめ座、福島県出身。指原莉乃プロデュースのアイドル「≠ME(ノットイコールミー)」 Instagram → http://instagram.com/suganami_mirei_"
+    },
+    "lang": "ja",
+    "source": "Twitter for iPhone",
+    "sensitive": false,
+    "sensitive_flags": [],
+    "favorite_count": 340,
+    "quote_count": 7,
+    "reply_count": 1,
+    "retweet_count": 64,
+    "bookmark_count": 5,
+    "view_count": 0,
+    "hashtags": [
+        "鮫島一六三",
+        "西田望見",
+        "冨田菜々風",
+        "菅波美玲",
+        "永田詩央里",
+        "ノイミー",
+        "バリモン"
+    ],
+    "mentions": [
+        {
+            "id": 1098218629407993856,
+            "name": "tomita_nanaka",
+            "nick": "冨田 菜々風"
+        },
+        {
+            "id": 1098214790600617985,
+            "name": "suganami_mirei",
+            "nick": "菅波 美玲"
+        },
+        {
+            "id": 1098230959269281792,
+            "name": "nagata_shiori_",
+            "nick": "永田 詩央里"
+        }
+    ],
+    "content": "4/25(日) FM FUJI\n\nバリバリMonster \n\nMC BANBANBAN \n#鮫島一六三\n\nMC #西田望見\n\nゲスト　≠ME\n#冨田菜々風 \n(@tomita_nanaka \n\n#菅波美玲\n(@suganami_mirei \n\n#永田詩央里\n(@nagata_shiori_ \n\n💎番組では、TIFデビューより\n追っています(^^)古参感💎\n💎久々の登場です💎\n\n#ノイミー　　　#バリモン",
+    "quote_by": "suganami_mirei",
+    "count": 1,
+    "category": "twitter",
+    "subcategory": "timeline"
+}
