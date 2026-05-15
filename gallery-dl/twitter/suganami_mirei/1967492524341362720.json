@@ -1,0 +1,73 @@
+{
+    "tweet_id": 1967492524341362720,
+    "retweet_id": 0,
+    "quote_id": 1967503070323184081,
+    "reply_id": 0,
+    "conversation_id": 1967492524341362720,
+    "source_id": 0,
+    "date": "2025-09-15 07:35:46",
+    "author": {
+        "id": 1096721475094999040,
+        "name": "Notequal_ME",
+        "nick": "≠ME_official",
+        "date": "2019-02-16 10:42:30",
+        "profile_banner": "https://pbs.twimg.com/profile_banners/1096721475094999040/1765861850",
+        "favourites_count": 36,
+        "followers_count": 183577,
+        "friends_count": 87,
+        "listed_count": 2847,
+        "media_count": 2938,
+        "statuses_count": 13748,
+        "location": "",
+        "verified": false,
+        "protected": false,
+        "profile_image": "https://pbs.twimg.com/profile_images/1148479566127648769/SEfKX8Tb.jpg",
+        "url": "http://not-equal-me.jp",
+        "description": "指原莉乃プロデュースのアイドル「≠ME(ノットイコールミー)」公式アカウントです！グループ名の≠MEには\"今までとは違う自分をみんなに経験してほしい\"という気持ちが込められています。#ノイミー"
+    },
+    "user": {
+        "id": 1098214790600617985,
+        "name": "suganami_mirei",
+        "nick": "菅波 美玲",
+        "date": "2019-02-20 13:36:24",
+        "profile_banner": "https://pbs.twimg.com/profile_banners/1098214790600617985/1765861504",
+        "favourites_count": 8437,
+        "followers_count": 125018,
+        "friends_count": 52,
+        "listed_count": 2719,
+        "media_count": 2579,
+        "statuses_count": 8462,
+        "location": "",
+        "verified": false,
+        "protected": false,
+        "profile_image": "https://pbs.twimg.com/profile_images/2000794234329423875/yDnjXgFv.jpg",
+        "url": "https://not-equal-me.jp",
+        "description": "O型、2000年2月5日生まれ、みずがめ座、福島県出身。指原莉乃プロデュースのアイドル「≠ME(ノットイコールミー)」 Instagram → http://instagram.com/suganami_mirei_"
+    },
+    "lang": "ja",
+    "source": "Twitter for iPhone",
+    "sensitive": false,
+    "sensitive_flags": [],
+    "favorite_count": 3366,
+    "quote_count": 87,
+    "reply_count": 3,
+    "retweet_count": 392,
+    "bookmark_count": 48,
+    "view_count": 465250,
+    "hashtags": [
+        "ノイミー映画",
+        "ノイミー"
+    ],
+    "mentions": [
+        {
+            "id": 1920715211620970496,
+            "name": "Notequal_ME_M",
+            "nick": "≠ME THE MOVIE -約束の歌-"
+        }
+    ],
+    "content": "『≠ME THE MOVIE -約束の歌-』\n応援上映！大ヒット御礼舞台挨拶\nありがとうございました💎!!\n\n▼公式HP\nhttps://www.toei-video.co.jp/not-equal-me-movie-jp/\n\n引き続き全国の劇場にて公開中です✨\nまだの方も、すでにご覧いただいた方も\nぜひ、何度でもお楽しみください🎠✧‧˚\n\n#ノイミー映画\n#ノイミー\n@Notequal_ME_M",
+    "quote_by": "suganami_mirei",
+    "count": 1,
+    "category": "twitter",
+    "subcategory": "timeline"
+}
