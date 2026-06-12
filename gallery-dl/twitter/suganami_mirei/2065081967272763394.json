@@ -1,0 +1,72 @@
+{
+    "tweet_id": 2065081967272763394,
+    "retweet_id": 2065055733562110330,
+    "quote_id": 0,
+    "reply_id": 0,
+    "conversation_id": 2065081967272763394,
+    "source_id": 0,
+    "date": "2026-06-11 14:41:23",
+    "author": {
+        "id": 1098230959269281792,
+        "name": "nagata_shiori_",
+        "nick": "永田 詩央里",
+        "date": "2019-02-20 14:40:39",
+        "profile_banner": "https://pbs.twimg.com/profile_banners/1098230959269281792/1765861364",
+        "favourites_count": 4790,
+        "followers_count": 124873,
+        "friends_count": 53,
+        "listed_count": 2757,
+        "media_count": 985,
+        "statuses_count": 4808,
+        "location": "",
+        "verified": false,
+        "protected": false,
+        "profile_image": "https://pbs.twimg.com/profile_images/2000793647034589194/3T_e1pLt.jpg",
+        "url": "https://not-equal-me.jp",
+        "description": "Ａ型、2004年4月2日生まれ、おひつじ座、広島県出身 。指原莉乃プロデュースのアイドル「≠ME(ノットイコールミー)」 Instagram▶︎ https://instagram.com/nagata__shiori?igshid=YmMyMTA2M2Y=  #永田ラジオ"
+    },
+    "user": {
+        "id": 1098214790600617985,
+        "name": "suganami_mirei",
+        "nick": "菅波 美玲",
+        "date": "2019-02-20 13:36:24",
+        "profile_banner": "https://pbs.twimg.com/profile_banners/1098214790600617985/1765861504",
+        "favourites_count": 8488,
+        "followers_count": 126578,
+        "friends_count": 52,
+        "listed_count": 2736,
+        "media_count": 2582,
+        "statuses_count": 8508,
+        "location": "",
+        "verified": false,
+        "protected": false,
+        "profile_image": "https://pbs.twimg.com/profile_images/2000794234329423875/yDnjXgFv.jpg",
+        "url": "https://not-equal-me.jp",
+        "description": "O型、2000年2月5日生まれ、みずがめ座、福島県出身。指原莉乃プロデュースのアイドル「≠ME(ノットイコールミー)」 Instagram → http://instagram.com/suganami_mirei_"
+    },
+    "lang": "ja",
+    "source": "Twitter for iPhone",
+    "sensitive": false,
+    "sensitive_flags": [],
+    "favorite_count": 0,
+    "quote_count": 0,
+    "reply_count": 0,
+    "retweet_count": 1653,
+    "bookmark_count": 0,
+    "view_count": 0,
+    "hashtags": [
+        "菅波美玲卒コン"
+    ],
+    "mentions": [
+        {
+            "id": 1098230959269281792,
+            "name": "nagata_shiori_",
+            "nick": "永田 詩央里"
+        }
+    ],
+    "content": "RT @nagata_shiori_: 明日は美玲ちゃんの卒業コンサート💐🩵\n愛のコップなみなみで、最高の時間を過ごそうね◽️12人とみんなで過ごせる全ての瞬間を大切に噛み締めます💎\n\nhttps://www.hulu.jp/store/not-equal-me-suganami-mirei-graduation-concert\n #菅波美玲卒コン",
+    "date_original": "2026-06-11 12:57:08",
+    "count": 2,
+    "category": "twitter",
+    "subcategory": "timeline"
+}

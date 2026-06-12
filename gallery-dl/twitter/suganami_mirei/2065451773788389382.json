@@ -1,0 +1,72 @@
+{
+    "tweet_id": 2065451773788389382,
+    "retweet_id": 2065451571958456718,
+    "quote_id": 0,
+    "reply_id": 0,
+    "conversation_id": 2065451773788389382,
+    "source_id": 0,
+    "date": "2026-06-12 15:10:51",
+    "author": {
+        "id": 1098392518109028352,
+        "name": "kanisawa_moeko",
+        "nick": "蟹沢 萌子",
+        "date": "2019-02-21 01:22:38",
+        "profile_banner": "https://pbs.twimg.com/profile_banners/1098392518109028352/1765861387",
+        "favourites_count": 2536,
+        "followers_count": 131157,
+        "friends_count": 60,
+        "listed_count": 2759,
+        "media_count": 1847,
+        "statuses_count": 5972,
+        "location": "",
+        "verified": false,
+        "protected": false,
+        "profile_image": "https://pbs.twimg.com/profile_images/2000794751831040008/JjVKiLlh.jpg",
+        "url": "https://not-equal-me.jp",
+        "description": "Ｂ型、1999年10月25日生まれ、さそり座、神奈川県出身。指原莉乃プロデュースのアイドル「≠ME(ノットイコールミー)」、TVアニメ「シャインポスト」 TINGS(玉城杏夏役)"
+    },
+    "user": {
+        "id": 1098214790600617985,
+        "name": "suganami_mirei",
+        "nick": "菅波 美玲",
+        "date": "2019-02-20 13:36:24",
+        "profile_banner": "https://pbs.twimg.com/profile_banners/1098214790600617985/1765861504",
+        "favourites_count": 8488,
+        "followers_count": 126578,
+        "friends_count": 52,
+        "listed_count": 2736,
+        "media_count": 2582,
+        "statuses_count": 8508,
+        "location": "",
+        "verified": false,
+        "protected": false,
+        "profile_image": "https://pbs.twimg.com/profile_images/2000794234329423875/yDnjXgFv.jpg",
+        "url": "https://not-equal-me.jp",
+        "description": "O型、2000年2月5日生まれ、みずがめ座、福島県出身。指原莉乃プロデュースのアイドル「≠ME(ノットイコールミー)」 Instagram → http://instagram.com/suganami_mirei_"
+    },
+    "lang": "ja",
+    "source": "Twitter for iPhone",
+    "sensitive": null,
+    "sensitive_flags": [],
+    "favorite_count": 0,
+    "quote_count": 0,
+    "reply_count": 0,
+    "retweet_count": 659,
+    "bookmark_count": 0,
+    "view_count": 0,
+    "hashtags": [
+        "菅波美玲卒コン"
+    ],
+    "mentions": [
+        {
+            "id": 1098392518109028352,
+            "name": "kanisawa_moeko",
+            "nick": "蟹沢 萌子"
+        }
+    ],
+    "content": "RT @kanisawa_moeko: #菅波美玲卒コン \n会場と配信と、ありがとうございました🩵°.\n皆の愛に溢れた空間の中で、\nドレス姿の美玲、涙が出るほど美しかったね \n笑って泣いて一緒に駆け抜けた全部がずっとずっと宝物です。\n\n美玲ーーー!!!!本当にありがとう。\n歩んでいくこれからの道が、輝き続けますように…!!",
+    "date_original": "2026-06-12 15:10:03",
+    "count": 3,
+    "category": "twitter",
+    "subcategory": "timeline"
+}

@@ -1,0 +1,72 @@
+{
+    "tweet_id": 2065053827292901702,
+    "retweet_id": 2065052437006917760,
+    "quote_id": 0,
+    "reply_id": 0,
+    "conversation_id": 2065053827292901702,
+    "source_id": 0,
+    "date": "2026-06-11 12:49:33",
+    "author": {
+        "id": 1098404923094446080,
+        "name": "kawanagonatsumi",
+        "nick": "川中子 奈月心",
+        "date": "2019-02-21 02:11:55",
+        "profile_banner": "https://pbs.twimg.com/profile_banners/1098404923094446080/1765861484",
+        "favourites_count": 3819,
+        "followers_count": 88844,
+        "friends_count": 51,
+        "listed_count": 2478,
+        "media_count": 2173,
+        "statuses_count": 4403,
+        "location": "",
+        "verified": false,
+        "protected": false,
+        "profile_image": "https://pbs.twimg.com/profile_images/2000795496512937985/T3HOqwDE.jpg",
+        "url": "https://not-equal-me.jp",
+        "description": "A型、2005年9月26日生まれ、てんびん座、東京都出身。指原莉乃プロデュースのアイドル「≠ME(ノットイコールミー)」 TikTok→ http://tiktok.com/@notequal_me_n…"
+    },
+    "user": {
+        "id": 1098214790600617985,
+        "name": "suganami_mirei",
+        "nick": "菅波 美玲",
+        "date": "2019-02-20 13:36:24",
+        "profile_banner": "https://pbs.twimg.com/profile_banners/1098214790600617985/1765861504",
+        "favourites_count": 8488,
+        "followers_count": 126578,
+        "friends_count": 52,
+        "listed_count": 2736,
+        "media_count": 2582,
+        "statuses_count": 8508,
+        "location": "",
+        "verified": false,
+        "protected": false,
+        "profile_image": "https://pbs.twimg.com/profile_images/2000794234329423875/yDnjXgFv.jpg",
+        "url": "https://not-equal-me.jp",
+        "description": "O型、2000年2月5日生まれ、みずがめ座、福島県出身。指原莉乃プロデュースのアイドル「≠ME(ノットイコールミー)」 Instagram → http://instagram.com/suganami_mirei_"
+    },
+    "lang": "ja",
+    "source": "Twitter for iPhone",
+    "sensitive": false,
+    "sensitive_flags": null,
+    "favorite_count": 0,
+    "quote_count": 0,
+    "reply_count": 0,
+    "retweet_count": 271,
+    "bookmark_count": 0,
+    "view_count": 0,
+    "hashtags": [
+        "菅波美玲卒コン"
+    ],
+    "mentions": [
+        {
+            "id": 1098404923094446080,
+            "name": "kawanagonatsumi",
+            "nick": "川中子 奈月心"
+        }
+    ],
+    "content": "RT @kawanagonatsumi: 明日は #菅波美玲卒コン \n大好きの気持ち､全部伝えたい🩵\n可愛いグッズも配信もぜひ(՞ .  ̫ .՞)\"\nhttp://sp.not-equal-me.jp/news/detail/7416",
+    "date_original": "2026-06-11 12:44:02",
+    "count": 0,
+    "category": "twitter",
+    "subcategory": "timeline"
+}
